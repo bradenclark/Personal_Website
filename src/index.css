@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: transparent;
   color: var(--text-color);
   font-family: var(--font-sans);
   line-height: 1.6;

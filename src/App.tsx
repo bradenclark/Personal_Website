@@ -4,6 +4,8 @@ import { Terminal, Code, Cpu, Briefcase, Mail, ExternalLink, ChevronDown } from 
 import data from './data.json';
 import './App.css';
 
+const GRID_MUL: [number, number] = [1, 1];
+
 function App() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -17,6 +19,17 @@ function App() {
 
   return (
     <div className="app-container">
+      <div className="terminal-bg">
+        <FaultyTerminal
+          tint="#0f380f"
+          gridMul={GRID_MUL}
+          scanlineIntensity={0.1}
+          flickerAmount={0.02}
+          glitchAmount={0.05}
+          brightness={0.8}
+        />
+      </div>
+
       {/* Navigation */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container nav-content">
@@ -34,15 +47,6 @@ function App() {
 
       {/* Hero Section */}
       <section id="hero" className="hero-section">
-        <div className="terminal-bg">
-          <FaultyTerminal
-            tint="#00ff41"
-            gridMul={[1, 1]}
-            scanlineIntensity={0.2}
-            flickerAmount={0.1}
-            glitchAmount={1.0}
-          />
-        </div>
         <div className="hero-content container">
           <h1 className="glitch-text" data-text={data.profile.name}>
             {data.profile.name}
