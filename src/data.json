@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "name": "Braden M Clark",
+    "headline": "Electrical Engineer at KBR inc. • 2025 Cedarville University Graduate",
+    "location": "Tipp City, Ohio, United States",
+    "about": "My name is Braden Clark and I am an electrical engineer. I desire to obtain a career in the fields of robotics, signal processing, or aerospace design to increase my knowledge of applied electrical and computer engineering."
+  },
+  "experience": [
+    {
+      "title": "Digital Signal Processing Engineer",
+      "company": "KBR, Inc.",
+      "dates": "May 2025 - Present",
+      "description": "Development of hardware and software products in support of defense and aerospace contracts. Key Skills: Software defined radios, Programming in Python and MatLab, Digital signal processing."
+    },
+    {
+      "title": "Engineering Intern",
+      "company": "KBR, Inc.",
+      "dates": "May 2023 - May 2025",
+      "description": "Completed an independent project involving ADS-B aircraft tracking. Gained skills in signal processing with software-defined radios."
+    },
+    {
+      "title": "Engineering Intern",
+      "company": "Esterline and Sons Mfg.",
+      "dates": "May 2022 - Aug 2022",
+      "description": "Worked with the R&D department to design solutions to specific problems such as optimization of machine cycle time and designing utilities throughout the shop. Researched and installed new variable frequency drives on the CNC machines. The solution reduced cycle time and saved the company money. Configured and ran 5-axis CNC mills, lathes, and CNC tig welding machinery."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Autonomous Drone Navigation",
+      "description": "Developed a SLAM-based navigation system for indoor drones using LIDAR and optical flow sensors.",
+      "tech": ["Python", "ROS", "C++", "OpenCV"]
+    },
+    {
+      "title": "FPGA Audio Visualizer",
+      "description": "Real-time FFT audio visualization implemented on a Xilinx Artix-7 FPGA with VGA output.",
+      "tech": ["Verilog", "VHDL", "Digital Logic"]
+    },
+    {
+      "title": "High-Frequency Trading Sim",
+      "description": "Low-latency trading algorithm simulation engine focusing on order book dynamics.",
+      "tech": ["C++", "Python", "ZeroMQ"]
+    }
+  ]
+}
