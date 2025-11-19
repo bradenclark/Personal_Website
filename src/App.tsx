@@ -152,7 +152,7 @@ function App() {
             I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
             I'll try my best to get back to you!
           </p>
-          <a href="mailto:hello@example.com" className="btn btn-primary mono mt-8">
+          <a href={`mailto:${data.profile.email}`} className="btn btn-primary mono mt-8">
             <Mail size={18} /> Say Hello
           </a>
         </div>

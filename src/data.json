@@ -1,8 +1,9 @@
 {
   "profile": {
     "name": "Braden M Clark",
-    "headline": "Electrical Engineer at KBR inc. • 2025 Cedarville University Graduate",
-    "location": "Tipp City, Ohio, United States",
+    "headline": "Associate Technical Professional in Systems Engineering at KBR inc. • BS in Electrical Engineering from Cedarville University",
+    "location": "Dayton, Ohio, United States",
+    "email": "braden.clark@us.kbr.com",
     "about": "My name is Braden Clark and I am an electrical engineer. I desire to obtain a career in the fields of robotics, signal processing, or aerospace design to increase my knowledge of applied electrical and computer engineering."
   },
   "experience": [
@@ -27,19 +28,35 @@
   ],
   "projects": [
     {
-      "title": "Autonomous Drone Navigation",
-      "description": "Developed a SLAM-based navigation system for indoor drones using LIDAR and optical flow sensors.",
-      "tech": ["Python", "ROS", "C++", "OpenCV"]
+      "title": "SAR Image Processing",
+      "description": "Developes a more-image-than-memory SAR image processing and viewing system using Python and SarPy",
+      "tech": [
+        "Python",
+        "OpenCV",
+        "Synthetic Aperture Radar",
+        "Image Processing"
+      ]
     },
     {
-      "title": "FPGA Audio Visualizer",
-      "description": "Real-time FFT audio visualization implemented on a Xilinx Artix-7 FPGA with VGA output.",
-      "tech": ["Verilog", "VHDL", "Digital Logic"]
+      "title": "ADS-B Aircraft Tracking",
+      "description": "Developed a real-time aircraft tracking gimbal that uses ADS-B signals to track aircraft and capture images.",
+      "tech": [
+        "Python",
+        "Software Defined Radio",
+        "Digital Signal Processing",
+        "Raspberry Pi",
+        "PID Control"
+      ]
     },
     {
-      "title": "High-Frequency Trading Sim",
-      "description": "Low-latency trading algorithm simulation engine focusing on order book dynamics.",
-      "tech": ["C++", "Python", "ZeroMQ"]
+      "title": "ML Based Lift Truck Pallet Detection",
+      "description": "Deveolped lightweight CNN classifier that could monitor the productivity of a lift truck operator through the presence/absence of pallets on the lift truck.",
+      "tech": [
+        "Python",
+        "OpenCV",
+        "TensorFlow",
+        "Raspberry Pi"
+      ]
     }
   ]
 }
