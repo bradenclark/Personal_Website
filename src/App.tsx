@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import FaultyTerminal from './components/FaultyTerminal';
-import { Terminal, Code, Cpu, Briefcase, Mail, ExternalLink, ChevronDown } from 'lucide-react';
+import { Terminal, Code, Cpu, Briefcase, Mail, ExternalLink, ChevronDown, Github, Linkedin } from 'lucide-react';
 import data from './data.json';
 import './App.css';
 
@@ -127,9 +127,17 @@ function App() {
               <div key={index} className="project-card">
                 <div className="project-header">
                   <Briefcase className="text-accent" size={24} />
-                  <div className="project-links">
-                    <ExternalLink size={20} />
-                  </div>
+                  {project.url && (
+                    <a 
+                      href={project.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      aria-label={`View ${project.title} project`}
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  )}
                 </div>
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-desc">{project.description}</p>
@@ -149,12 +157,34 @@ function App() {
         <div className="container text-center">
           <h2 className="section-title mono"><span className="text-accent">04.</span> Contact</h2>
           <p className="contact-text">
-            I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
+            I'm always looking for new opportunities to learn and grow. If you have any questions or just want to say hi,
             I'll try my best to get back to you!
           </p>
-          <a href={`mailto:${data.profile.email}`} className="btn btn-primary mono mt-8">
-            <Mail size={18} /> Say Hello
-          </a>
+          <div className="contact-buttons">
+            <a href={`mailto:${data.profile.email}`} className="btn btn-primary mono">
+              <Mail size={18} /> Say Hello
+            </a>
+            {data.profile.github && (
+              <a 
+                href={data.profile.github} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn btn-outline mono"
+              >
+                <Github size={18} /> GitHub
+              </a>
+            )}
+            {data.profile.linkedin && (
+              <a 
+                href={data.profile.linkedin} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn btn-outline mono"
+              >
+                <Linkedin size={18} /> LinkedIn
+              </a>
+            )}
+          </div>
         </div>
       </section>
 

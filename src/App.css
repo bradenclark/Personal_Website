@@ -270,6 +270,19 @@
   margin-bottom: 1.5rem;
 }
 
+.project-link {
+  color: var(--text-color);
+  transition: color 0.2s, transform 0.2s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-link:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
 .project-title {
   font-size: 1.3rem;
   margin-bottom: 1rem;
@@ -298,6 +311,14 @@
   max-width: 600px;
   margin: 0 auto 2rem;
   color: var(--secondary-color);
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .mt-8 {
